@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+
+.env
+.env.*
+
+*.local
+
+# accidental Vue/TypeScript emit
+src/**/*.vue.js
+src/**/*.vue.d.ts

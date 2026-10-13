@@ -1,0 +1,14 @@
+case_id: CASE-001
+category: single_file_change
+requirement: >
+  Increase the maximum allowed user name length from 20 to 30 characters while preserving the current validation style and tests.
+expected_files:
+  - src/components/UserProfileForm.vue
+  - tests/unit/UserProfileForm.test.ts
+forbidden_paths:
+  - src/api/
+  - src/router/
+verification:
+  - unit-test
+  - typecheck
+  - build
